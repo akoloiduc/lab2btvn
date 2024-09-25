@@ -1,0 +1,28 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 15px;
+}
+#vietkey{
+    font-size: 14px;
+}
+.mytexts{
+    border: solid #96D4D4 ;
+}
+.highlight{
+    color: red;
+}
+#selections{
+    background-color: rgba(247, 235, 19, 0.841);
+}
+.title{
+    text-align: right;
+    font-weight: bold;
+}
+.content{
+    text-align: left;
+}
+.capcha{
+    width: 40%;
+}
+

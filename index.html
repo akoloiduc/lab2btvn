@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <form action="">
+        <div id="vietkey">
+            Bộ gõ tiếng việt 
+            <input type="radio" id="off" name="off" value="Off">
+            <label for="off">Off</label>
+            <input type="radio" id="telex" name="telex" value="Telex">
+            <label for="telex">Telex</label>
+            <input type="radio" id="vni" name="vni" value="Vni">
+            <label for="vni">Vni</label>
+            <input type="radio" id="viqr" name="viqr" value="VIQR">
+            <label for="viqr">VIQR</label>
+         </div>
+    </form>
+    <hr style="border: dotted aqua 1px;">
+    <div id="thongtintaikhoan">
+        <div id="khuvucsinhsong">
+            <label for="selections">Chọn khu vực sinh sống:</label>
+                <select name="selections" id="selections" size="1">
+                    <option value="select1">--Chọn khu vực sinh sống</option>
+                    <option value="select2">Hà Nội</option>
+                    <option value="select3">Hải Phòng</option>
+                    <option value="select4">Thái Bình</option>
+                </select>
+                <br><br>
+        </div>
+        <div id="information">
+            <table style="padding-left: 50px;">
+                <tr>
+                    <td class="title"><label><span id="highlight">*</span> Tên truy cập:</label></td>
+                    <td class="content"><input type="text" class="mytexts" id="username" name="username" placeholder="Tên truy cập"></td>
+                </tr>
+                <tr>
+                    <td class="title"><label><span id="highlight">*</span> Mật khẩu:</label></td>
+                    <td class="content"> <input type="text" class="mytexts" id="password" name="password" placeholder="**********"></td>
+                </tr>
+                <tr>
+                    <td class="title"><label><span id="highlight">*</span> Xác nhận mật khẩu:</label></td>
+                    <td class="content"> <input type="text" class="mytexts" id="password_repeat" name="password_repeat" placeholder="**********"></td>
+                </tr>
+                <tr>
+                    <td class="title"><label><span class="highlight">*</span> Tên đầy đủ:</label></td>
+                    <td class="content"><input type="text" class="mytexts" id="fullname" name="fullname" placeholder="Nhập đầy đủ họ tên"></td>
+                </tr>
+                <tr>
+                    <td class="title"><label><span class="highlight">*</span> Email:</label></td>
+                    <td class="content"><input type="text" class="mytexts" id="myemail" name="myemail" placeholder="Email của bạn"></td>
+                </tr>
+                <tr>
+                    <td class="title"><label><span id="highlight">*</span> Mobile:</label></td>
+                    <td class="content"><input type="text" class="mytexts" id="phone" name="phone" placeholder="Số di động"></td>
+                </tr>
+                <tr>
+                    <td class="title"><label> Số ĐT khác:</label></td>
+                    <td class="content"><input type="text" name="otherphone" class="mytexts"></td>
+                </tr>
+                <tr>
+                    <td class="title"><label> Website:</label></td>
+                    <td class="content"><input type="text" name="Website" class="mytexts"></td>
+                </tr>
+                <tr>
+                    <td class="title"><label><span id="highlight">*</span> Địa chỉ:</label></td>
+                    <td class="content"><input type="text" class="mytexts" name="address" id="address" placeholder="Địa chỉ của bạn"></td>
+                </tr>
+                <tr>
+                    <td class="title"> <label> Mã bảo vệ:</label></td>
+                    <td class="content"> <input type="text" class="mytexts capcha" placeholder="Nhập mã an toàn"> 
+                        <span style="border: solid ;font-weight: bold; background-color: rgb(161, 158, 158);">Mã capcha</span></td>
+                </tr>
+            </table>
+            <p style="color: red;">(Chú ý : Phân biệt chữ hoa, chữ thường và không có dấu cách)</p>
+            <input type="checkbox"> <span>Tôi đồng ý <u>Quy định đăng tin </u>và<u> Quy chế thành viên</u></span>
+            <br><br>
+            <button type="submit" class="mybtns" onclick="validate()" >Đăng kí</button> 
+            <button type="submit">Quay lại</button>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
